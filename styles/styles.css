@@ -77,7 +77,7 @@ body {
 
 .welcome-page {
     background-color:#FFFFFF;
-    background-image: url("../images/welcome-background.jpg");
+    background-image: url("../images/welcome-page/welcome-background.jpg");
     background-size: 100% auto;
     background-repeat: no-repeat;
 }
@@ -166,7 +166,7 @@ body {
     text-align: center;
     color: #FFFFFF;
     background-color: #FFFFFF;
-    background-image: url("../images/email-background.jpg");
+    background-image: url("../images//newsletters/email-background.jpg");
     height: 411px;
     background-size: 100% auto;
     background-repeat: no-repeat;
@@ -222,7 +222,7 @@ body {
 
 .inner-header {
     background-color:#FFFFFF;
-    background-image: url("../images/catalog/catalog-background.jpg");
+    background-image: url("../images//inner-header/catalog-background.jpg");
     height: 408px;
     background-size: 100% auto;
     background-repeat: no-repeat;
