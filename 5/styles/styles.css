@@ -2,7 +2,7 @@
     font-family: "PT Sans";
     font-style: normal;
     font-weight: 400;
-    src: url("fonts/pt-sans-regular.woff2") format("woff2");
+    src: url("../fonts/ptsans-400.woff2") format("woff2");
     font-display: swap;
   }
 
@@ -10,7 +10,7 @@
     font-family: "PT Sans";
     font-style: normal;
     font-weight: 700;
-    src: url("fonts/pt-sans-bold.woff2") format("woff2");
+    src: url("../fonts/ptsans-700.woff2") format("woff2");
     font-display: swap;
   }
   
@@ -18,25 +18,17 @@
     font-family: "PT Sans";
     font-style: italic;
     font-weight: 400;
-    src: url("fonts/pt-sans-italic.woff2") format("woff2");
+    src: url("../fonts/ptsans-400.woff2") format("woff2");
   }
   
   @font-face {
     font-family: "PT Sans";
     font-style: italic;
     font-weight: 700;
-    src: url("fonts/pt-sans-bold-italic.woff2") format("woff2");
+    src: url("../fonts/ptsans-700.woff2") format("woff2");
     font-display: swap;
   }
   
-/* PT Sans Narrow */
-@font-face {
-    font-family: "PT Sans Narrow";
-    font-style: normal;
-    font-weight: 700;
-    src: url("fonts/pt-sans-narrow-bold.woff2") format("woff2");
-    font-display: swap;
-  }
 
 body {
     font-family: "PT Sans", sans-serif;
@@ -71,8 +63,6 @@ body {
 .main-index {
     color: #333333;
     background-color:#FFFFFF;
-    font-size: 18px;  
-    line-height: 31px;
   }
 
 .welcome-page {
@@ -144,10 +134,25 @@ body {
     text-transform: uppercase;
     color: #000000;
 }
-.search-button {
+
+/* Button */
+. button {
     font-family: inherit;
     font-weight: 700;
     font-size: 20px;
+}
+
+.button-main {
+    background: #756257;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #FFFFFF;
+
+}
+
+
+.search-button {
     text-align: center;
     text-decoration: none;
     text-transform: uppercase;
@@ -159,15 +164,9 @@ body {
     /* Email */
 
 .newsletter {
-    font-family: PT Sans,sans-serif;
-    font-weight: 400;
-    font-size: 22px;
-    line-height: 26px;
-    text-align: center;
     color: #FFFFFF;
     background-color: #FFFFFF;
     background-image: url("../images//newsletters/email-background.jpg");
-    height: 411px;
     background-size: 100% auto;
     background-repeat: no-repeat;
 }
@@ -180,12 +179,9 @@ body {
 }
 
 .newsletter-button {
-    font-family: PT Sans, sans-serif;
-    font-weight: 700;
-    font-size: 20px;
-    line-height: 26px;
     text-align: center;
     text-transform: uppercase;
+    line-height: 26px;
     color: #FFFFFF;
     background: #83B3D3;
 }
@@ -196,8 +192,8 @@ body {
     background-color: #FFFFFF;
     text-decoration: none;
 }
+
 .footer-copyright-phone {
-    font-family: PT Sans,sans-serif;
     font-weight: 400;
     font-size: 40px;
     line-height: 40px;
@@ -213,28 +209,18 @@ body {
 
 .main-inner {
     background: #FFFFFF;
-    font-family: PT Sans,sans-serif;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 23px;
     color: #333333;
 }
 
 .inner-header {
     background-color:#FFFFFF;
     background-image: url("../images//inner-header/catalog-background.jpg");
-    height: 408px;
     background-size: 100% auto;
     background-repeat: no-repeat;
-    font-family: PT Sans,sans-serif;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 23px;
     color: #FFFFFF; 
     text-decoration: none;
 }
 .inner-header-title {
-    font-family: PT Sans,sans-serif;
     font-weight: 700;
     font-size: 60px;
     line-height: 78px;
@@ -242,18 +228,24 @@ body {
 }
 
 .search-hotels-results {
-    font-family: PT Sans,sans-serif;
     font-weight: 700;
     font-size: 30px;
     line-height: 39px;
     text-transform: uppercase;
     color: #000000;
 }
+ /* Catalog filter*/
+
+.catalog-filter-title {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 26px;
+    color: black;
+}
 
   /* Hotel cards */
 
 .hotel-card-title {
-    font-family: PT Sans,sans-serif;
     font-weight: 700;
     font-size: 24px;
     line-height: 31px;
@@ -266,14 +258,12 @@ body {
      /* Hotel cards info */
 
 .hotel-card-type {
-    font-family: PT Sans,sans-serif;
     font-weight: 400;
     font-size: 18px;
     line-height: 23px;
     color: #333333;
 }
 .hotel-card-price {
-    font-family: PT Sans,sans-serif;
     font-weight: 400;
     font-size: 18px;
     line-height: 23px;
@@ -282,10 +272,8 @@ body {
     
     /* Hotel cards buttons */
 
-.hotel-card-button-info {
+.button-info {
     background: #756257;
-    font-family: PT Sans, sans-serif;
-    font-weight: 700;
     font-size: 16px;
     line-height: 21px;
     text-align: center;
@@ -294,10 +282,8 @@ body {
     color: #FFFFFF;
 }
 
-.hotel-card-button-like {
+.button-like {
     background:#83B3D3;
-    font-family: PT Sans, sans-serif;
-    font-weight: 700;
     font-size: 16px;
     line-height: 21px;
     text-align: center;
@@ -305,10 +291,8 @@ body {
     text-decoration: none;
     color: #FFFFFF;
 }
-.hotel-card-button-like-green {
+.button-like-green {
     background:#7DB54F;
-    font-family: PT Sans, sans-serif;
-    font-weight: 700;
     font-size: 16px;
     line-height: 21px;
     text-align: center;
@@ -321,9 +305,7 @@ body {
     background: #F2F2F2;
 }
 
-.button-pagination-show-more {
-    font-weight: 700;
-    font-size: 20px;
+.pagination-button {
     line-height: 26px;
     text-align: center;
     text-transform: uppercase;
@@ -334,7 +316,6 @@ body {
  /* Email */
 
  .newsletter-light {
-    font-family: PT Sans,sans-serif;
     font-weight: 400;
     font-size: 22px;
     line-height: 26px;
@@ -352,9 +333,6 @@ body {
 }
 
 .newsletter-button {
-    font-family: PT Sans, sans-serif;
-    font-weight: 700;
-    font-size: 20px;
     line-height: 26px;
     text-align: center;
     text-transform: uppercase;
