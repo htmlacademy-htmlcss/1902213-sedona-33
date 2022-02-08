@@ -49,7 +49,8 @@
     </nav>
   </header>
 
-  <main class="main-inner">
+  <main class="main-inner main-container">
+		<div class="page-container">
     <header class="inner-header">
       <h1 class="inner-header-title">Гостиницы Седоны</h1>
       <ul class="breadcrumbs">
@@ -62,7 +63,7 @@
       </ul>
     </header>
 
-    <section class="catalog-products">
+    <section class="catalog-filter">
       <h2 class="visually-hidden">Список гостиниц с фильтрами</h2>
       <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
         <fieldset class="catalog-filter-group">
@@ -116,9 +117,10 @@
         <button class="button" type="submit">Применить</button>
         <button class="button" type="reset">Сбросить</button>
       </form>
-      </section>
-
-      <p class="search-hotels-results">Найдено гостиниц:38</p>
+		</section>
+		<section class = "catalog-products">
+			<div class="catalog-right-column">
+     	 <p class="search-hotels-results">Найдено гостиниц:38</p>
 
       <select class="select-control" aria-label="Сортировка">
         <option value="cheap">Сначала дешёвые</option>
@@ -235,6 +237,8 @@
       <option value="three">3</option>
       <option value="four">4</option>
     </select>
+			</div>
+	</section>
 
     <section class="newsletter-light">
       <h2 class="newsletter-title">Подпишитесь на рассылку</h2>
@@ -246,38 +250,45 @@
         <button class="button newsletter-button" type="submit">Подписаться </button>
       </form>
     </section>
+	</div>
   </main>
 
-  <footer class="page-footer">
-    <section class="footer-social">
-      <h3 class="visually-hidden">Социальные сети</h3>
-      <ul class="footer-social-list">
-        <li class="footer-social-item">
-          <a class="button" href="https://twitter.com/htmlacademy_ru">
-            <span class="visually-hidden">Twitter</span>
-          </a>
-        </li>
-        <li class="footer-social-item">
-          <a class="button" href="https://www.facebook.com/htmlacademy">
-            <span class="visually-hidden">Facebook</span>
-          </a>
-        </li>
-        <li class="footer-social-item">
-          <a class="button" href="https://www.youtube.com/c/HTMLAcademyRUS">
-            <span class="visually-hidden">Youtube</span>
-          </a>
-        </li>
-      </ul>
-    </section>
+	<footer class="page-footer">
+		<div class="page-footer-container">
 
-    <address class="footer-copyright">
-      <a class="footer-copyright-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
-    </address>
-    <h3 class="visually-hidden">Создатели сайта</h3>
-      <a class="footer-copyright-logo" href="https://htmlacademy.ru">
-        <img class="footer-logo" alt="Логотип HTML Academy." src="images/icons/logo-htmlacademy.svg">
-      </a>
+			<section class="footer-social">
+				<h3 class="visually-hidden">Социальные сети</h3>
+				<ul class="footer-social-list">
+					<li class="footer-social-item">
+						<a class="button" href="https://twitter.com/htmlacademy_ru">
+							<span class="visually-hidden">Twitter</span>
+						</a>
+					</li>
+					<li class="footer-social-item">
+						<a class="button" href="https://www.facebook.com/htmlacademy">
+							<span class="visually-hidden">Facebook</span>
+						</a>
+					</li>
+					<li class="footer-social-item">
+						<a class="button" href="https://www.youtube.com/c/HTMLAcademyRUS">
+							<span class="visually-hidden">Youtube</span>
+						</a>
+					</li>
+				</ul>
+			</section>
 
+			<section class = "copyright">
+				<address class="footer-copyright">
+					<a class="footer-copyright-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
+				</address>
+			</section>
+			<section class="footer-creators">
+		<h3 class="visually-hidden">Создатели сайта</h3>
+			<a class="footer-copyright-logo" href="https://htmlacademy.ru">
+				<img class="footer-logo" alt="Логотип HTML Academy." src="images/icons/logo-htmlacademy.svg">
+			</a>
+			</section>
+		</div>
   </footer>
 </body>
 

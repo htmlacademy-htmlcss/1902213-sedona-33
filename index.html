@@ -50,7 +50,8 @@
       </nav>
     </header>
 
-    <main class="main-index">
+    <main class="main-caontainer main-index">
+			<div class="page-container">
       <section class="welcome-page">
         <h1 class="visually-hidden">Welcome to the gorgeous Sedona</h1>
         <img class="welcome-picture" src="images/welcome-page/welcome-to-sedona.svg" alt="Добро пожаловать в Седону!" width="458" height="352">
@@ -86,7 +87,7 @@
             </ul>
           </li>
           <li class="reasons-item">
-          <img class="advantage-image" alt="Вид на мост Дьявола." src="images/advantages-hotels/photo-2.jpg" width="800" height="384"> 
+          <img class="advantage-image" alt="Вид на мост Дьявола." src="images/advantages-hotels/photo-2.jpg" width="800" height="384">
             <div class="advantage-blue">
               <h3 class="reasons-title"> Там есть мост дьявола </h3>
               <p class="reasons-description"> Да, по нему можно пройти! Если вы осмелитесь, разумеется </p>
@@ -112,7 +113,7 @@
         <div class="offer-hotel-search">
           <h3 class="hotel-search-title">Заинтересовались?</h3>
           <p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-          <a class="button search-button" href="#">Поиск гостиницы в Седоне</a>
+          <a class="button button-large" href="#">Поиск гостиницы в Седоне</a>
         </div>
       </section>
 
@@ -126,37 +127,45 @@
             <button class="button button-special newsletter-button" type="submit">Подписаться </button>
           </form>
       </section>
+			</div>
     </main>
 
     <footer class="page-footer">
-      <section class="footer-social">
-        <h3 class="visually-hidden">Социальные сети</h3>
-        <ul class="footer-social-list">
-          <li class="footer-social-item">
-            <a class="button" href="https://twitter.com/htmlacademy_ru">
-              <span class="visually-hidden">Twitter</span>
-            </a>
-          </li>
-          <li class="footer-social-item">
-            <a class="button" href="https://www.facebook.com/htmlacademy">
-              <span class="visually-hidden">Facebook</span>
-            </a>
-          </li>
-          <li class="footer-social-item">
-            <a class="button" href="https://www.youtube.com/c/HTMLAcademyRUS">
-              <span class="visually-hidden">Youtube</span>
-            </a>
-          </li>
-        </ul>
-      </section>
-      
-      <address class="footer-copyright">
-        <a class="footer-copyright-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
-      </address>
+			<div class="page-footer-container">
+
+				<section class="footer-social">
+					<h3 class="visually-hidden">Социальные сети</h3>
+					<ul class="footer-social-list">
+						<li class="footer-social-item">
+							<a class="button" href="https://twitter.com/htmlacademy_ru">
+								<span class="visually-hidden">Twitter</span>
+							</a>
+						</li>
+						<li class="footer-social-item">
+							<a class="button" href="https://www.facebook.com/htmlacademy">
+								<span class="visually-hidden">Facebook</span>
+							</a>
+						</li>
+						<li class="footer-social-item">
+							<a class="button" href="https://www.youtube.com/c/HTMLAcademyRUS">
+								<span class="visually-hidden">Youtube</span>
+							</a>
+						</li>
+					</ul>
+				</section>
+
+				<section class = "copyright">
+					<address class="footer-copyright">
+						<a class="footer-copyright-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
+					</address>
+				</section>
+				<section class="footer-creators">
       <h3 class="visually-hidden">Создатели сайта</h3>
         <a class="footer-copyright-logo" href="https://htmlacademy.ru">
           <img class="footer-logo" alt="Логотип HTML Academy." src="images/icons/logo-htmlacademy.svg">
         </a>
+				</section>
+			</div>
     </footer>
   </body>
 </html>
