@@ -246,6 +246,7 @@ body {
   background-image: url("../images//newsletters/email-background.jpg");
   background-size: 100% auto;
   background-repeat: no-repeat;
+	color: #FFFFFF;
 }
 
 .newsletter-block{
@@ -258,6 +259,7 @@ body {
   font-size: 30px;
   line-height: 36px;
   text-transform: uppercase;
+	color: #FFFFFF;
 }
 
 .field {
@@ -392,7 +394,7 @@ body {
 
  /* Email */
 
-.newsletter-light {
+.newsletter-dark {
   font-weight: 400;
   font-size: 22px;
   line-height: 26px;
@@ -400,7 +402,7 @@ body {
   color: #333333;
 }
 
-.newsletter-title {
+.dark {
   font-weight: 700;
   font-size: 30px;
   line-height: 36px;
