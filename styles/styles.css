@@ -81,19 +81,21 @@ body {
 .page-header {
   color: #000000;
   background:#FFFFFF;
-	padding: 0 70px 0 70px;
   }
+
 
   /* Navigation */
 
 .navigation-logo {
 	width:139px;
 	margin-right:47px;
+	padding-left: 70px;
 }
 .navigation {
   display: flex;
 	width: 1060px;
 	margin: 0 auto;
+	padding-right: 70px;
 	}
 
 .navigation-list {
@@ -105,8 +107,9 @@ body {
 .navigation-user {
   max-width: 310px;
   margin-left: auto;
-
+	padding-right: 70px;
 	}
+
 
 .navigation-link {
   font-family: "PT Sans", sans-serif;
@@ -145,7 +148,6 @@ body {
 .reasons-list {
 	margin: 0;
 	padding: 0;
-  padding: 0 40px;
 }
 
 .reasons-text {
@@ -164,39 +166,37 @@ body {
 }
 
 .reasons-item {
-	width: 400px;
-	padding: 75px;
   line-height: 21px;
   text-align: center;
-  background-color: rgba(131, 179, 211, 0.12);
-}
-
-.reasons-light {
-	background: rgba(131, 179, 211, 0.2);
 }
 
 .reasons-blue {
+	width: 400px;
+	padding: 90px;
   background-color: #83B3D3;
 	color: #FFFFFF;
 }
 
-.advantages-list{
-	width: 400px;
-  margin: 0;
-	padding: 0;
-  padding: 0 40px;
-}
-
 .advantages-item {
-	width: 400px;
-	padding: 75px;
   line-height: 21px;
   text-align: center;
-  background-color: rgba(131, 179, 211, 0.12);
 }
 
-.advantages-light {
+.advantages-white {
+	width: 400px;
+	padding: 75px;
 	background-color: #FFFFFF;
+}
+.advantages-grey {
+	width: 400px;
+	padding: 75px;
+	background-color: rgba(131, 179, 211, 0.12);
+}
+
+.advantages-dark {
+	width: 400px;
+	padding: 75px;
+	background-color: rgba(131, 179, 211, 0.2);
 }
 
 .advantages-title {
@@ -293,13 +293,15 @@ body {
 }
 
 .footer-social {
-  width: 110px;
+  max-width: 110px;
   margin-right: 65px;
+	padding-left: 72px;
 }
 
 .footer-creators {
-	margin-left: auto;
 	max-width: 115px;
+	margin-left: auto;
+	padding-right: 45px;;
 }
 
 /* Catalog */
