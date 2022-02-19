@@ -51,6 +51,8 @@
 
   <main class="main-inner main-container">
 		<div class="page-container">
+
+		<div class="filters-block">
     <header class="inner-header">
       <h1 class="inner-header-title">Гостиницы Седоны</h1>
       <ul class="breadcrumbs">
@@ -118,25 +120,29 @@
         <button class="button" type="reset">Сбросить</button>
       </form>
 		</section>
+		</div>
+
 		<section class = "catalog-products">
 			<div class="catalog-right-column">
      	 <p class="search-hotels-results">Найдено гостиниц:38</p>
 
+			<div class="sorting-container">
       <select class="select-control" aria-label="Сортировка">
         <option value="cheap">Сначала дешёвые</option>
         <option value="expensive">Сначала дорогие</option>
         <option value="popular">Сначала популярные</option>
       </select>
 
-      <a class="button-select" href="#">
+      <a href="#" class="button">
         <span class="visually-hidden">Показать карточки</span>
       </a>
-      <a href="#" class="button-select">
+      <a href="#" class="button">
         <span class="visually-hidden">Показать ленту</span>
       </a>
-      <a href="#" class="button-select">
+      <a href="#" class="button">
         <span class="visually-hidden">Показать список</span>
       </a>
+		</div>
 
       <article class="hotel-card">
         <img class="hotel-card-image" src="images/hotel-list/hotel-amara.jpg" alt="Картинка гостиницы." width="300" height="206">
@@ -206,10 +212,14 @@
         </div>
       </article>
 
-      <button class="button pagination-button" type="button">Загрузить ещё</button>
-      <ul class="pagination">
+			<div class="show-more">
+      	<button class="button pagination-button" type="button">Загрузить ещё</button>
+      </div>
+
+			<div class="pagination-container">
+			<ul class="pagination">
         <li class="pagination-item">
-          <a class="pagination-link-first">1</a>
+          <a class="pagination-link pagination-current">1</a>
         </li>
         <li class="pagination-item">
           <a class="pagination-link" href="#">2</a>
@@ -227,10 +237,8 @@
           <a class="pagination-link" href="#">10</a>
         </li>
       </ul>
-
-      <div class="hotels-number">
+			<div class="hotels-number">
         <p class="hotels-number-results">Гостиниц на странице:</p>
-      </div>
     <select class="select-control" aria-label="Количество гостиниц">
       <option value="one">1</option>
       <option value="two">2</option>
@@ -238,6 +246,8 @@
       <option value="four">4</option>
     </select>
 			</div>
+			</div>
+		</div>
 	</section>
 
     <section class="newsletter-dark">
