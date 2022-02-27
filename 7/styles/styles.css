@@ -75,10 +75,11 @@ body {
   line-height: 36px;
 }
 
-.buttons-small {
+.button-small {
   font-size: 16px;
   line-height: 21px;
   height: 37px;
+	padding: 20px;
 }
 
 .button-success {
@@ -110,10 +111,12 @@ body {
 .navigation-list {
 	display: flex;
 	flex-wrap: wrap;
+	list-style-type: none;
   margin: 0;
   padding: 0;
+	padding-top: 13px;
+	padding-bottom: 14px;
 	width: 455px;
-	list-style-type: none;
 }
 
 .navigation-user {
@@ -155,7 +158,6 @@ body {
   background-size: 100% auto;
   background-repeat: no-repeat;
 	padding-top: 52px;
-	margin-bottom: 146px;
 }
 
 .welcome-picture {
@@ -171,17 +173,21 @@ body {
 	}
 
 .advantages {
+	display: flex;
 	margin-bottom: 91px;
 }
 
 .reasons-list {
+	display: flex;
+	flex-wrap: wrap;
+	list-style-type: none;
 	margin: 0;
 	padding: 0;
-	list-style-type: none;
 }
 
 .reasons-text {
 	width: 720px;
+	padding-top: 63px;
 	margin: auto;
   font-size: 22px;
   line-height: 36px;
@@ -198,11 +204,15 @@ body {
 }
 
 .reasons-item {
+	display: block;
+	box-sizing: border-box;
   line-height: 21px;
   text-align: center;
 }
 
 .reasons-blue {
+	display: block;
+	box-sizing: border-box;
 	width: 400px;
 	padding: 90px;
   background-color: #83B3D3;
@@ -210,7 +220,16 @@ body {
 }
 
 .advantages-list {
+	display: flex;
+	flex-wrap: wrap;
 	list-style-type: none;
+}
+
+.advantages-item {
+	display: block;
+	box-sizing: border-box;
+  line-height: 21px;
+  text-align: center;
 }
 
 .advantages-main-title {
@@ -223,24 +242,25 @@ body {
   margin-bottom: 20px;
 }
 
-.advantages-item {
-  line-height: 21px;
-  text-align: center;
-}
-
 .advantages-white {
+	display: block;
+	box-sizing: border-box;
 	width: 400px;
 	padding: 75px;
 	background-color: #FFFFFF;
 }
 
 .advantages-grey {
+	display: block;
+	box-sizing: border-box;
 	width: 400px;
 	padding: 75px;
 	background-color: rgba(131, 179, 211, 0.12);
 }
 
 .advantages-dark {
+	display: block;
+	box-sizing: border-box;
 	width: 400px;
 	padding: 75px;
 	background-color: rgba(131, 179, 211, 0.2);
