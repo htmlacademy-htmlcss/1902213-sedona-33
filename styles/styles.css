@@ -543,9 +543,8 @@ body {
 
 .hotel-card {
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
   width: 340px;
-  padding: 20px;
 }
 
 .hotel-card-title {
@@ -554,9 +553,22 @@ body {
   line-height: 31px;
 }
 
+.hotel-card-content {
+  padding:20px;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
 .hotel-card-link {
+  margin-top: 16px;
+  margin-bottom: 16px;
   text-decoration: none;
   color: #000000;
+}
+
+.hotel-card-image {
+  object-fit: cover;
 }
 
 /* Hotel cards info */
