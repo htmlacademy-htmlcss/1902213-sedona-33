@@ -59,35 +59,30 @@ body {
   text-decoration: none;
   text-transform: uppercase;
   color: #FFFFFF;
-  height: 48px;
-}
-
-.button-navigation {
-  padding: 9px 15px;
-  background: #756257;
-  border-radius: 4px;
-}
-
-.button-main {
-  padding: 20px 188px;
-  background: #756257;
-  border-radius: 10px;
-}
-
-.button-special {
-  background: #83B3D3;
+  border: none;
 }
 
 .button-large {
   font-size: 20px;
   line-height: 36px;
+  width: 620px;
+  padding: 17px;
+  border-radius: 4px;
 }
 
 .button-small {
   font-size: 16px;
-  line-height: 21px;
+  line-height: 26px;
   padding: 9px 24px;
   border-radius: 4px;
+}
+
+.button-main {
+  background: #756257;
+}
+
+.button-special {
+  background: #83B3D3;
 }
 
 .button-success {
@@ -103,6 +98,7 @@ body {
 .page-header {
   position: relative;
   padding: 13px 70px;
+  padding-left: 256px;
   color: #000000;
   background:#FFFFFF;
 }
@@ -210,6 +206,7 @@ body {
   list-style-type: none;
   margin: 0;
   padding: 0;
+  counter-reset: section;
 }
 
 .reasons-item {
@@ -224,6 +221,11 @@ body {
   display: flex;
 }
 
+.reasons-item-main::before {
+  counter-increment: section;
+  content:  "- №" counter(section) "-";
+}
+
 .reasons-text {
   width: 720px;
   margin: auto;
@@ -236,7 +238,7 @@ body {
   margin-top: 0;
   margin-bottom: 81px;
   font-weight: 700;
-  font-size: 30px;
+  font-size: 24px;
   line-height: 28px;
   text-transform: uppercase;
 }
@@ -290,6 +292,12 @@ body {
   width: 400px;
   padding: 75px;
 }
+
+.reasons-item-submain::before {
+  counter-increment: section;
+  content:  "- №" counter(section) "-";
+}
+
 
 .reasons-item-submain:nth-child(odd) {
   background-color: rgba(131, 179, 211, 0.12);
@@ -492,6 +500,24 @@ body {
   padding: 73px 72px;
 }
 
+fieldset, legend {
+  margin: 0;
+  padding: 0;
+}
+
+fieldset {
+  border: none;
+  margin: 0 auto;
+  padding: 0 34px;
+  width: 75%;
+}
+
+legend {
+  float: left;
+  margin-bottom: .5em;
+  width: 100%;
+}
+
 .catalog-filter {
   display: flex;
   margin-right: 18px;
@@ -502,6 +528,10 @@ body {
   margin:0;
   padding:0;
   list-style-type: none;
+}
+
+.catalog-filter-item {
+  padding-bottom: 13px;
 }
 
 .catalog-filter-title {
@@ -524,12 +554,14 @@ body {
   border: 2px solid #E6E6E6;
   border-radius: 4px;
   margin-left: 192px;
+  margin-top: 22px;
   padding: 13px 127px 13px 19px;
 }
 
 .sorting-container .button {
   width: 48px;
   height: 48px;
+  margin-top: 22px;
 }
 
 /* Hotel cards */
@@ -544,6 +576,7 @@ body {
 .hotel-card {
   display: flex;
   flex-wrap: wrap;
+  padding: 20px;
   width: 340px;
 }
 
@@ -567,8 +600,18 @@ body {
   color: #000000;
 }
 
+.hotel-card-image-link {
+  width: 300px;
+  height: 206px;
+}
+
 .hotel-card-image {
-  object-fit: cover;
+  width: 100%;
+}
+
+.hotel-booking {
+  display: flex;
+  justify-content: space-between;
 }
 
 /* Hotel cards info */
@@ -585,6 +628,10 @@ body {
 
 .rating-hotel {
   background: #F2F2F2;
+  padding: 10px 20px;
+  border-radius: 4px;
+  text-align: center;
+  width: 160px;
 }
 
 .pagination-button {
@@ -596,6 +643,40 @@ body {
   background: #83B3D3;
   border-radius: 4px;
 }
+
+/* Stars */
+
+.rating-stars {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 0;
+}
+
+.hotel-star {
+  width:  117px;
+  height: 17px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  padding-top: 26px;
+  background-image: url("../images/icons/star.svg");
+  background-size: 25px 18px;
+  background-repeat: repeat-x;
+  background-position: -4px center;
+  color: #83B3D3;
+}
+
+.hotel-star--four {
+  width: 93px;
+}
+
+.hotel-star--three {
+  width: 68px;
+}
+
+.hotel-star--two {
+  width: 43px;
+}
+
 
 /* Email Catalog */
 
@@ -616,18 +697,13 @@ body {
 }
 
 .newsletter-button {
-  line-height: 26px;
-  text-align: center;
-  text-transform: uppercase;
-  color: #FFFFFF;
-  background: #83B3D3;
   border-radius: 0px 10px 10px 0px;
 }
 
 /* Pagination */
 
 .show-more {
-  margin: 0 auto;
+  text-align: center;
 }
 
 .select-control-hotel {
@@ -636,6 +712,7 @@ body {
   border: 2px solid #E6E6E6;
   border-radius: 4px;
   margin-left: 51px;
+  margin-top: 10px;
   padding: 13px 133px 13px 17px;
 }
 
