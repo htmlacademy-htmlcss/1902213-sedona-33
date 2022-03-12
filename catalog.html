@@ -84,7 +84,7 @@
       </ul>
     </header>
 
-    <section class="catalog-filter">
+    <section class="filters">
       <h2 class="visually-hidden">Список гостиниц с фильтрами.</h2>
       <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
         <fieldset class="catalog-filter-group">
@@ -111,7 +111,7 @@
           </ul>
         </fieldset>
 
-        <fieldset class="catalog-filter-group">
+        <fieldset class="catalog-filter-group catalog-filter-group-left">
           <legend class="catalog-filter-title">Тип жилья:</legend>
           <ul class="catalog-filter-list">
             <li class="catalog-filter-item">
@@ -189,7 +189,7 @@
 
           <div class="rating-item">
             <div class="rating-stars">
-              <div class="hotel-star hotel-star--four "></div>
+              <div class="hotel-star hotel-star-four "></div>
               <span class="visually-hidden">Четыре звезды.</span>
             </div>
             <div class="rating">
@@ -220,7 +220,7 @@
 
         <div class="rating-item">
           <div class="rating-stars">
-            <div class="hotel-star hotel-star--three"></div>
+            <div class="hotel-star hotel-star-three"></div>
             <span class="visually-hidden">Три звезды.</span>
           </div>
           <div class="rating">
@@ -251,7 +251,7 @@
 
         <div class="rating-item">
           <div class="rating-stars">
-            <div class="hotel-star hotel-star--two"></div>
+            <div class="hotel-star hotel-star-two"></div>
             <span class="visually-hidden">Две звезды.</span>
           </div>
           <div class="rating">
@@ -281,7 +281,7 @@
 
         <div class="rating-item">
           <div class="rating-stars">
-            <div class="hotel-star hotel-star--two"></div>
+            <div class="hotel-star hotel-star-two"></div>
             <span class="visually-hidden">Две звезды.</span>
           </div>
           <div class="rating">
@@ -331,11 +331,12 @@
 		</div>
 	</section>
 
+     <!-- Рассылка новостей -->
     <section class="newsletter-dark">
 			<div class="newsletter-block">
-      <h2 class="newsletter-title dark">Подпишитесь на рассылку</h2>
-      <p>Только полезная информация и никакого спама, честное бойскаутское!</p>
-		</div>
+         <h2 class="newsletter-title dark">Подпишитесь на рассылку</h2>
+             <p class="newsletter-text">Только полезная информация и никакого спама, <br> честное бойскаутское!</p>
+	  	</div>
       <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post">
         <label for="newsletter-email" class="visually-hidden">Email.</label>
         <input class="field" placeholder="Ваш email" type="e-mail" name="newsletter-email" id="newsletter-email"
@@ -347,7 +348,6 @@
   </main>
 
      <!-- Футер -->
-
      <footer class="page-footer">
       <section class="footer-social">
         <h3 class="visually-hidden">Социальные сети.</h3>
