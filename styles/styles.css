@@ -20,6 +20,7 @@ html {
 
 .page {
   background-color: #E5E5E5;
+  box-shadow: 0 0 10px rgb(0 0 0 / 20%);
 }
 
 body {
@@ -35,11 +36,10 @@ body {
   background-color:#FFFFFF;
 }
 
-.container {
+.page-body {
   width: 1200px;
   margin:0 auto;
   background-color:#FFFFFF;
-  box-shadow: 0 0 10px rgb(0 0 0 / 20%);
 }
 
 .visually-hidden {
@@ -146,8 +146,26 @@ body {
   font-weight: normal;
   font-size: 18px;
   text-transform: none;
-  padding-top: 21px;
+  line-height: 23px;
+  padding: 0;
+  margin-top: 20px;
   background: transparent;
+}
+
+.button-reset:hover {
+  color: #FFFFFF;
+  opacity: 0.6;
+}
+
+.button-reset:focus {
+  color: #FFFFFF;
+  border: 3px solid #83B3D3;
+  border-radius: 4px;
+}
+
+.button-reset:hover {
+  color: #FFFFFF;
+  opacity: 0.3;
 }
 
 /* Header */
@@ -793,45 +811,63 @@ body {
 
 .breadcrumbs {
   display: flex;
+  flex-wrap: wrap;
   margin: 0;
   padding: 0;
   color:#FFFFFF;
   list-style-type: none;
 }
 
+.breadcrumbs-item {
+  position: relative;
+  margin-right: 26px;
+  list-style-type: none;
+}
+
+.breadcrumbs-item::after {
+  position: absolute;
+  top: 9px;
+  right: -16px;
+  width: 6px;
+  height: 8px;
+  background-image: url("../images/icons/home-arrow.svg");
+  background-repeat: no-repeat;
+  content: "";
+}
+
+.breadcrumbs-item:last-child::after {
+  content: none;
+}
+
 /* Link */
 
 .breadcrumbs-link {
-  margin-right: 26px;
   color: inherit;
   position: relative;
   text-decoration: none;
+  padding: 0 7px 0 7px;
+  margin: 0;
 }
 
-.breadcrumbs-link:hover{
+.breadcrumbs-link-home {
+  padding: 0 14px 0 14px;
+}
+
+.breadcrumbs-link:hover {
   color: #FFFFFF;
   opacity: 0.6;
-}
-
-.breadcrumbs-link:focus {
-  outline: 3px solid #83B3D3;
-  border-radius: 4px;
-}
-
-.breadcrumbs-link:active {
-  color: #FFFFFF;
-  opacity: 0.3;
   outline: none;
 }
 
-.breadcrumbs-link-arrow {
-  padding-left: 26px;
+.breadcrumbs-link:focus {
+  color: #FFFFFF;
+  outline: 3px solid #83B3D3;
+  border-radius: 2px;
 }
 
-.breadcrumbs-link-arrow .header-icon {
-  right: auto;
-  left: 11px;
-  margin: auto 0;
+.breadcrumbs-link:active {
+  color: rgba(255, 255, 255, 0.3);
+  outline: none;
 }
 
 .header-icon {
@@ -842,17 +878,6 @@ body {
   left: 0;
   margin: auto;
   fill: #FFFFFF;
-}
-
-.header-icon-arrow {
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  margin: auto;
-  fill: #FFFFFF;
-  opacity: 0.3;
 }
 
 /* Catalog filter*/
@@ -871,11 +896,6 @@ body {
   padding: 44px 72px 70px 72px;
 }
 
-fieldset, legend {
-  margin: 0;
-  padding: 0;
-}
-
 .catalog-filter-group {
   border: none;
   margin-right: 67px;
@@ -883,12 +903,6 @@ fieldset, legend {
 
 .catalog-filter-group-left {
   margin-right: 167px;
-}
-
-legend {
-  float: left;
-  margin-bottom: .5em;
-  width: 100%;
 }
 
 .catalog-filter-list {
@@ -911,6 +925,9 @@ legend {
 
 .filter-buttons {
   margin-right: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .sorting-container {
@@ -940,6 +957,7 @@ legend {
 .card-grid-toggle-current {
   border: 2px solid #000000;
   border-radius: 4px;
+  pointer-events: none;
 }
 
 .card-grid-toggle:hover {
