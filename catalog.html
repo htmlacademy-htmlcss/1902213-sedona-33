@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="page" lang="ru">
 
 <head>
   <meta charset="utf-8">
@@ -43,6 +43,7 @@
             <svg class="navigation-icon" aria-hidden="true" focusable="false" width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
               <path d="M9.9 19c-.3 0-.6-.1-.8-.4-5.4-6.1-6.7-7.5-7-7.9C1.4 9.8 1 8.6 1 7.4 1 4.4 3.4 2 6.5 2 7.8 2 9 2.5 10 3.3c1-.8 2.3-1.3 3.5-1.3 3 0 5.5 2.4 5.5 5.4 0 1.3-.5 2.5-1.3 3.4l-7 7.9c-.2.2-.4.3-.8.3Zm-6-9.5c.3.4 3.5 4 6.1 6.9l6.2-7c.5-.5.7-1.2.7-2 0-1.8-1.5-3.3-3.3-3.3-1 0-2 .5-2.7 1.3-.3.3-.6.4-.9.4-.3 0-.6-.2-.8-.4-.7-.8-1.7-1.3-2.7-1.3-1.8 0-3.3 1.5-3.3 3.3-.1.9.3 1.6.7 2.1-.1 0-.1 0 0 0Z" />
             </svg>
+            <span class="count-badge">12</span>
             <span class="visually-hidden">
               Избранное.
             </span>
@@ -63,7 +64,7 @@
       <h1 class="inner-header-title">Гостиницы Седоны</h1>
       <ul class="breadcrumbs">
         <li class="breadcrumbs-item">
-          <a class="breadcrumbs-link" href="index.html">
+          <a class="breadcrumbs-link breadcrumbs-link-home" href="index.html">
             <svg class="header-icon" aria-hidden="true" focusable="false" width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
               <path d="M10 3 4 8.8V15h12V8.8L10 3Zm5 11H5V9.2l5-4.8 5 4.8V14Z"/>
               <path d="M8 13h1v-2.5h2V13h1V9.5H8V13Z" />
@@ -74,17 +75,14 @@
           </a>
         </li>
         <li class="breadcrumbs-item">
-          <a class="breadcrumbs-link breadcrumbs-link-arrow"  href="catalog.html">
-            <svg class="header-icon header-icon-arrow" aria-hidden="true" focusable="false" width="5" height="8" viewBox="0 0 5 8"  xmlns="http://www.w3.org/2000/svg">
-            <path d="M4.8 3.6 1 .2C.8 0 .4 0 .1.2-.2.4-.1.8.1 1l3.3 3L.2 7c-.2.2-.2.6 0 .8 0 .1.3.2.4.2.1 0 .3-.1.4-.2l3.8-3.4c.3-.2.3-.6 0-.8Z" />
-          </svg>
+          <a class="breadcrumbs-link"  href="catalog.html">
             Гостиницы
           </a>
         </li>
       </ul>
     </header>
 
-    <section class="catalog-filter">
+    <section class="filters">
       <h2 class="visually-hidden">Список гостиниц с фильтрами.</h2>
       <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
         <fieldset class="catalog-filter-group">
@@ -111,7 +109,7 @@
           </ul>
         </fieldset>
 
-        <fieldset class="catalog-filter-group">
+        <fieldset class="catalog-filter-group catalog-filter-group-left">
           <legend class="catalog-filter-title">Тип жилья:</legend>
           <ul class="catalog-filter-list">
             <li class="catalog-filter-item">
@@ -148,11 +146,13 @@
 				  <p class="search-hotels-results">Найдено гостиниц:38</p>
         </div>
 
-          <select class="select-control sorting-type" aria-label="Сортировка">
+        <div class="select sorting-type">
+          <select class="select-control" aria-label="Сортировка">
             <option value="cheap">Сначала дешёвые</option>
             <option value="expensive">Сначала дорогие</option>
             <option value="popular">Сначала популярные</option>
           </select>
+        </div>
 
           <a href="#" class="card-grid-toggle card-grid-toggle-current ">
             <svg aria-hidden="true" focusable="false" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6 3H2v6h4V3ZM18 3h-4v6h4V3ZM12 3H8v6h4V3ZM6 11H2v6h4v-6ZM18 11h-4v6h4v-6ZM12 11H8v6h4v-6Z" fill="#000"/></svg>
@@ -189,7 +189,7 @@
 
           <div class="rating-item">
             <div class="rating-stars">
-              <div class="hotel-star hotel-star--four "></div>
+              <div class="hotel-star hotel-star-four "></div>
               <span class="visually-hidden">Четыре звезды.</span>
             </div>
             <div class="rating">
@@ -220,7 +220,7 @@
 
         <div class="rating-item">
           <div class="rating-stars">
-            <div class="hotel-star hotel-star--three"></div>
+            <div class="hotel-star hotel-star-three"></div>
             <span class="visually-hidden">Три звезды.</span>
           </div>
           <div class="rating">
@@ -251,7 +251,7 @@
 
         <div class="rating-item">
           <div class="rating-stars">
-            <div class="hotel-star hotel-star--two"></div>
+            <div class="hotel-star hotel-star-two"></div>
             <span class="visually-hidden">Две звезды.</span>
           </div>
           <div class="rating">
@@ -281,7 +281,7 @@
 
         <div class="rating-item">
           <div class="rating-stars">
-            <div class="hotel-star hotel-star--two"></div>
+            <div class="hotel-star hotel-star-two"></div>
             <span class="visually-hidden">Две звезды.</span>
           </div>
           <div class="rating">
@@ -331,11 +331,12 @@
 		</div>
 	</section>
 
+     <!-- Рассылка новостей -->
     <section class="newsletter-dark">
 			<div class="newsletter-block">
-      <h2 class="newsletter-title dark">Подпишитесь на рассылку</h2>
-      <p>Только полезная информация и никакого спама, честное бойскаутское!</p>
-		</div>
+         <h2 class="newsletter-title dark">Подпишитесь на рассылку</h2>
+             <p class="newsletter-text">Только полезная информация и никакого спама, <br> честное бойскаутское!</p>
+	  	</div>
       <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post">
         <label for="newsletter-email" class="visually-hidden">Email.</label>
         <input class="field" placeholder="Ваш email" type="e-mail" name="newsletter-email" id="newsletter-email"
@@ -347,7 +348,6 @@
   </main>
 
      <!-- Футер -->
-
      <footer class="page-footer">
       <section class="footer-social">
         <h3 class="visually-hidden">Социальные сети.</h3>
