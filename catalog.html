@@ -7,7 +7,8 @@
   <link rel="stylesheet" href="styles/styles.css">
 </head>
 
-<body class="page-body">
+<body class="page-body container">
+  <div class="container">
 
   <header class="page-header">
     <nav class="navigation">
@@ -43,6 +44,7 @@
             <svg class="navigation-icon" aria-hidden="true" focusable="false" width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
               <path d="M9.9 19c-.3 0-.6-.1-.8-.4-5.4-6.1-6.7-7.5-7-7.9C1.4 9.8 1 8.6 1 7.4 1 4.4 3.4 2 6.5 2 7.8 2 9 2.5 10 3.3c1-.8 2.3-1.3 3.5-1.3 3 0 5.5 2.4 5.5 5.4 0 1.3-.5 2.5-1.3 3.4l-7 7.9c-.2.2-.4.3-.8.3Zm-6-9.5c.3.4 3.5 4 6.1 6.9l6.2-7c.5-.5.7-1.2.7-2 0-1.8-1.5-3.3-3.3-3.3-1 0-2 .5-2.7 1.3-.3.3-.6.4-.9.4-.3 0-.6-.2-.8-.4-.7-.8-1.7-1.3-2.7-1.3-1.8 0-3.3 1.5-3.3 3.3-.1.9.3 1.6.7 2.1-.1 0-.1 0 0 0Z" />
             </svg>
+            <span class="count-badge">12</span>
             <span class="visually-hidden">
               Избранное.
             </span>
@@ -148,11 +150,13 @@
 				  <p class="search-hotels-results">Найдено гостиниц:38</p>
         </div>
 
-          <select class="select-control sorting-type" aria-label="Сортировка">
+        <div class="select sorting-type">
+          <select class="select-control" aria-label="Сортировка">
             <option value="cheap">Сначала дешёвые</option>
             <option value="expensive">Сначала дорогие</option>
             <option value="popular">Сначала популярные</option>
           </select>
+        </div>
 
           <a href="#" class="card-grid-toggle card-grid-toggle-current ">
             <svg aria-hidden="true" focusable="false" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6 3H2v6h4V3ZM18 3h-4v6h4V3ZM12 3H8v6h4V3ZM6 11H2v6h4v-6ZM18 11h-4v6h4v-6ZM12 11H8v6h4v-6Z" fill="#000"/></svg>
@@ -392,6 +396,7 @@
       </a>
       </section>
   </footer>
+</div>
 </body>
 
 </html>
