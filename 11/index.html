@@ -51,7 +51,7 @@
           </a>
         </li>
         <li class="navigation-item">
-          <a class="button button-small button-main" href="#">Хочу сюда!</a>
+          <a class="button button-small button-main button-user" href="#">Хочу сюда!</a>
         </li>
       </ul>
     </nav>
@@ -97,7 +97,6 @@
               <p class="advantages-description">Не только китайского, но и настоящего местного производства!</p>
             </li>
           </ul>
-          </li>
           <li class="reasons-item reasons-item-main">
             <div class="advantage-image-container">
               <img class="reasons-image" alt="Вид на мост Дьявола." src="images/advantages-hotels/photo-2.jpg"
@@ -105,7 +104,7 @@
             </div>
             <div class="reasons-text-container">
               <h3 class="reasons-title"> Там есть <br> мост дьявола </h3>
-              <p class="reasons-description"> Да, по нему можно пройти! Если вы осмелитесь, разумеется </p>
+              <p class="reasons-description"> Да, по нему можно пройти! <br> Если вы осмелитесь, разумеется </p>
             </div>
           </li>
           <li class="reasons-item reasons-item-submain">
@@ -128,7 +127,7 @@
         <h3 class="visually-hidden">Поиск гостиницы.</h3>
         <div class="offer-hotel-search">
           <h3 class="hotel-search-title">Заинтересовались?</h3>
-          <p class="offer-block-text">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц
+          <p class="offer-block-text">Укажите предполагаемые даты поездки, <br> и мы покажем вам лучшие предложения гостиниц
             в Седоне</p>
           <a class="button button-large button-main search-button" href="#">Поиск гостиницы в Седоне</a>
         </div>
@@ -174,14 +173,14 @@
         <li class="footer-social-item">
           <a class="footer-social-link" href="https://www.youtube.com/c/HTMLAcademyRUS">
             <svg class="footer-social-icon" aria-hidden="true" focusable="false" width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-              <path fill-rule="evenodd" clip-rule="evenodd"d="M17.814 3.418c.86.23 1.537.907 1.768 1.768C19.998 6.746 20 10 20 10s0 3.255-.418 4.814a2.505 2.505 0 0 1-1.768 1.768c-1.56.419-7.814.419-7.814.419s-6.255 0-7.814-.419a2.505 2.505 0 0 1-1.768-1.768C0 13.255 0 10 0 10s0-3.255.418-4.814a2.505 2.505 0 0 1 1.768-1.768C3.746 3 10 3 10 3s6.255 0 7.814.418Zm-4.62 6.583-5.196 3V7l5.196 3Z" />
+              <path fill-rule= "evenodd" clip-rule= "evenodd"d="M17.814 3.418c.86.23 1.537.907 1.768 1.768C19.998 6.746 20 10 20 10s0 3.255-.418 4.814a2.505 2.505 0 0 1-1.768 1.768c-1.56.419-7.814.419-7.814.419s-6.255 0-7.814-.419a2.505 2.505 0 0 1-1.768-1.768C0 13.255 0 10 0 10s0-3.255.418-4.814a2.505 2.505 0 0 1 1.768-1.768C3.746 3 10 3 10 3s6.255 0 7.814.418Zm-4.62 6.583-5.196 3V7l5.196 3Z"/>
             </svg>
             <span class="visually-hidden">Youtube.</span>
           </a>
         </li>
       </ul>
     </section>
-    <section class="copyright">
+    <section class= "copyright">
       <address class="footer-copyright">
         <a class="footer-copyright-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
       </address>
@@ -200,7 +199,7 @@
   <!--Модальное окно для поиска гостиницы-->
   <div class="modal-container modal-container-close">
     <div class="modal modal-search">
-      <button class="modal-close-button" type="submit">
+      <button class="modal-close-button">
         <span class="visually-hidden">Закрыть.</span>
       </button>
       <section class="modal-content">
@@ -208,23 +207,23 @@
       </section>
 
       <form class="search-form" action="https://echo.htmlacademy.ru/" method="post">
-        <div class="search-field">
+        <div class="modal-field">
           <label class="search-form-label" for="arrival"> Дата заезда: </label>
           <input class="search-form-input" type="text" name="arrival" id= "arrival" placeholder="Укажите дату" required>
           <button class="search-form-calendar" type="button">
             <span class="visually-hidden">Календарь.</span>
           </button>
-          <!--Если введена некорректная дата, то добавляется .warning-text-error -->
-          <p class="warning-text warning-text-error">Мы не можем отправить вас в прошлое.</p>
+          <!--Если введена некорректная дата, то к .modal-field добавляется .modal-field-error -->
+          <p class="warning-text">Мы не можем отправить вас в прошлое.</p>
         </div>
 
-        <div class="search-field">
+        <div class="modal-field">
           <label class="search-form-label" for="arrival"> Дата выезда: </label>
           <input class="search-form-input" type="text" name="departure" id= "departure" placeholder="Укажите дату" required>
           <button class="search-form-calendar" type="button">
             <span class="visually-hidden">Календарь.</span>
          </button>
-          <!--Если введена корректная дата, то добавляется .warning-text-success-->
+          <!--Если введена корректная дата, то к .modal-field добавляется .modal-field-success-->
              <p class="warning-text">На эти даты есть свободные номера. Пока есть.</p>
         </div>
 
@@ -236,9 +235,9 @@
               </svg>
               <span class="visually-hidden">Уменьшить на единицу.</span>
             </button>
-            <input class="search-form-input-number" type="text" name="adults" id="adults" placeholder="2" required>
+            <input class="search-form-input-number" type="text" name="adults" id="adults" value="1" required>
             <button class="search-form-button search-form-button-plus" type="button">
-              <svg class="number-icon" aria-hidden="true" focusable="false" width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <svg class="number-icon number-icon-plus" aria-hidden="true" focusable="false" width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M13 6H7V0H6v6H0v1h6v6h1V7h6V6Z"/>
               </svg>
               <span class="visually-hidden">Увеличить на единицу.</span>
@@ -256,21 +255,21 @@
                 <span class="tooltip-text" role="tooltip" id="tooltip-label">Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</span>
               </span>
 
-            </div>
             <button class="search-form-button search-form-button-minus-right" type="button">
               <svg class="number-icon" aria-hidden="true" focusable="false" width="13" height="1" viewBox="0 0 13 1" xmlns="http://www.w3.org/2000/svg">
                 <path  d="M0 0v1h13V0H0Z"/>
               </svg>
               <span class="visually-hidden">Уменьшить на единицу.</span>
             </button>
-            <input class="search-form-input-number input-right" type="text" name="children" id="children" placeholder="1" required>
+            <input class="search-form-input-number input-right" type="text" name="children" id="children" value="0" required>
             <button class="search-form-button search-form-button-plus-right" type="button">
-              <svg class="number-icon" aria-hidden="true" focusable="false" width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <svg class="number-icon number-icon-plus" aria-hidden="true" focusable="false" width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M13 6H7V0H6v6H0v1h6v6h1V7h6V6Z"/>
               </svg>
               <span class="visually-hidden">Увеличить на единицу.</span>
             </button>
         </div>
+      </div>
         <div class="modal-form-button">
           <button class="button button-special modal-button" type="submit">Найти</button>
       </div>
