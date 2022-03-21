@@ -169,9 +169,9 @@ body {
   font-size: 18px;
   text-transform: none;
   line-height: 23px;
-  padding: 0;
+  padding: 2px;
   margin: auto;
-  margin-top: 20px;
+  margin-top: 18px;
   width: 100px;
   background: transparent;
 }
@@ -224,6 +224,7 @@ body {
   position: relative;
   padding: 13px 70px;
   padding-left: 250px;
+  padding-right: 48px;
   color: #000000;
 }
 
@@ -269,8 +270,12 @@ body {
           align-items: center;
 }
 
-.navigation-item:not(:last-child) {
+.navigation-item {
   margin-right: 22px;
+}
+
+.navigation-item-search {
+  margin: 0;
 }
 
 .navigation-link {
@@ -325,6 +330,8 @@ body {
 .navigation-icon {
   display: block;
   margin: auto;
+  padding-left: 2px;
+  padding-top: 2px;
   fill: #000000;
 }
 
@@ -443,7 +450,7 @@ body {
           box-sizing: border-box;
   width: 33.33%;
   min-height: 384px;
-  padding: 97px 88px 87px 90px;
+  padding: 98px 88px 87px 90px;
   background-color: #83b3d3;
   color: #ffffff;
 }
@@ -469,7 +476,7 @@ body {
           box-sizing: border-box;
   width: 400px;
   min-height: 384px;
-  padding: 94px 75px 108px 75px;
+  padding: 97px 75px 108px 75px;
 }
 
 .reasons-item-submain:nth-child(odd) {
@@ -482,7 +489,7 @@ body {
 
 .reasons-title {
   margin-top: 0;
-  margin-bottom: 26px;
+  margin-bottom: 25px;
   font-weight: 700;
   font-size: 24px;
   line-height: 28px;
@@ -501,7 +508,6 @@ body {
   font-size: 18px;
   line-height: 21px;
   text-align: center;
-  padding-top: 3px;
 }
 
 .reasons-title::after {
@@ -574,7 +580,7 @@ body {
   line-height: 28px;
   text-align: center;
   margin-top: 0;
-  margin-bottom: 21px;
+  margin-bottom: 26px;
   text-transform: uppercase;
   color: #000000;
 }
@@ -583,13 +589,14 @@ body {
   display: block;
   counter-increment: section;
   content: "— №" counter(section) "—";
-  margin-top: 27px;
+  margin-top: 26px;
   font-weight: 400;
   font-size: 18px;
 }
 
 .advantages-description {
   margin: 0;
+  margin-top: -6px;
   font-size: 18px;
   line-height: 21px;
   text-align: center;
@@ -602,7 +609,7 @@ body {
 /* Offer Block */
 
 .offer-block {
-  padding: 87px 70px 93px 70px;
+  padding: 90px 70px 91px 70px;
   font-weight: 400;
   font-size: 22px;
   line-height: 26px;
@@ -678,7 +685,7 @@ body {
 
 .newsletter-text {
   margin: 0;
-  padding-bottom: 46px;
+  padding-bottom: 47px;
   font-size: 22px;
   line-height: 26px;
 }
@@ -815,12 +822,13 @@ body {
   display: -ms-flexbox;
   display: flex;
   margin: 0;
+  margin-top: -5px;
   padding: 0;
   list-style-type: none;
 }
 
 .footer-social-item {
-  margin-right: 4px;
+  margin-right: 3px;
 }
 
 .footer-social-item:nth-child(3n) {
@@ -839,7 +847,7 @@ body {
 
 .footer-social-icon {
   position: absolute;
-  top: 0;
+  top: 2px;
   right: 0;
   bottom: 0;
   left: 0;
@@ -884,7 +892,8 @@ body {
   bottom: 0;
   left: 0;
   margin: auto;
-  margin-left: 40px;
+  margin-top: -16px;
+  margin-left: 41px;
   padding: 18px;
   fill: #000000;
 }
@@ -1417,7 +1426,7 @@ body {
 
 .catalog-products {
   margin: 0 auto;
-  padding: 44px 72px 70px 72px;
+  padding: 44px 72px 69px 72px;
 }
 
 fieldset {
@@ -1606,7 +1615,7 @@ legend {
 
 .catalog-filter-label {
   position: absolute;
-  top: 50%;
+  top: 55%;
   right: 13px;
   margin-top: -13px;
   font-size: 18px;
@@ -1631,14 +1640,17 @@ legend {
 
 .range-input-min {
   border-radius: 4px 0 0 4px;
+  padding-right: 35px;
   padding-left: 19px;
-  width: 123px;
+  margin-right: 2px;
+  max-width: 90px;
 }
 
 .range-input-max {
   border-radius: 0 4px 4px 0;
+  padding-right: 35px;
   padding-left: 17px;
-  width: 125px;
+  max-width: 90px;
 }
 
 /* Hover, focus, active */
@@ -1650,9 +1662,19 @@ legend {
 }
 
 .range-input:focus {
-  outline: 2px solid #ffffff;
-  -webkit-box-shadow: 0px 0px 0px 5px #81b3d2;
-          box-shadow: 0px 0px 0px 5px #81b3d2;
+  box-shadow: 0 0 0 3px #81b3d2,
+              inset 0 0 0 3px #81b3d2;
+  background: transparent;
+}
+
+.range-input:focus:not(:focus-visible) {
+  box-shadow: none;
+}
+
+.range-input:focus-visible {
+  box-shadow: inset 0 0 0 3px #81B3D2;
+  background: transparent;
+  outline: 3px solid #81B3D2;
 }
 
 .range-input:active {
@@ -2025,6 +2047,7 @@ legend {
   border-radius: 4px;
   margin-left: 51px;
   margin-right: auto;
+  margin-bottom: 5px;
   padding: 9px 24px 13px 13px;
 }
 
@@ -2120,4 +2143,6 @@ legend {
 .hotels-number-results {
   font-size: 18px;
   line-height: 23px;
+  margin: 0;
+  padding-top: 12px;
 }
