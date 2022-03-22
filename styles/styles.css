@@ -1402,7 +1402,7 @@ legend {
 }
 
 .catalog-filter-title-price {
-  margin-bottom: 36px;
+  margin-bottom: 34px;
 }
 
 /* Control */
@@ -1548,7 +1548,7 @@ legend {
 .catalog-filter-label {
   position: absolute;
   top: 55%;
-  right: 13px;
+  right: 16px;
   margin-top: -13px;
   font-size: 18px;
   line-height: 23px;
@@ -1596,16 +1596,18 @@ legend {
 
 .range-input-min {
   border-radius: 4px 0 0 4px;
+  padding: 0;
   padding-right: 35px;
-  padding-left: 19px;
+  padding-left: 17px;
   margin-right: -2px;
   max-width: 90px;
 }
 
 .range-input-max {
   border-radius: 0 4px 4px 0;
+  padding: 0;
   padding-right: 35px;
-  padding-left: 17px;
+  padding-left: 13px;
   max-width: 90px;
 }
 
