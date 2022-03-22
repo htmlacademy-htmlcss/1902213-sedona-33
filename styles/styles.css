@@ -1363,17 +1363,10 @@ body {
   padding: 44px 72px 69px 72px;
 }
 
-fieldset {
-  margin: 0;
-}
-
-legend {
-  padding: 0;
-}
-
 .catalog-filter-group {
   border: none;
   padding: 0;
+  margin: 0;
   margin-right: 67px;
 }
 
@@ -1399,6 +1392,7 @@ legend {
   line-height: 26px;
   color: #ffffff;
   margin-bottom: 30px;
+  padding: 0;
 }
 
 .catalog-filter-title-price {
