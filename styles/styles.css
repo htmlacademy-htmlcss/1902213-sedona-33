@@ -297,10 +297,6 @@ body {
   color: rgba(117, 98, 87, 0.3);
 }
 
-.navigation-link:focus {
-  outline: none;
-}
-
 .navigation-user .navigation-link {
   min-width: 42px;
   min-height: 38px;
